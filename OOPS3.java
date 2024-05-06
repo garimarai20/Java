@@ -3,6 +3,7 @@ public class OOPS3 {
         Horse h = new Horse();
         h.eat();
         h.walk();
+        System.out.println(h.color);
 
         Chicken c = new Chicken();
         c.eat();
@@ -13,8 +14,12 @@ public class OOPS3 {
 } 
 
 abstract class Animal{
+    String color;
+    Animal(){
+        color = "brown";
+    }
     void eat(){
-        System.out.println("hi");
+        System.out.println("hi"); 
     }
 
     abstract void walk();
@@ -22,6 +27,9 @@ abstract class Animal{
 }
 
 class Horse extends Animal{
+    void changeColor(){
+        color ="dark brown";
+    }
     void walk(){
         System.out.println("walks on four legs");
     }
@@ -29,6 +37,9 @@ class Horse extends Animal{
 }
 
 class Chicken extends Animal{
+    void changeColor(){
+        color ="yellow";
+    }
     void walk(){
         System.out.println("walks on two legs");
     }
