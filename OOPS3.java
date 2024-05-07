@@ -8,21 +8,22 @@ public class OOPS3 {
     
 } 
 
-abstract class Animal{
+abstract class An{
     String color;
     
-    Animal()  {
+    An()  {
+        color = "brown";
         
     }
     void eat(){
-        System.out.println("hi"); 
+        System.out.println("helloworld"); 
     }
 
     abstract void walk();
     
 }
 
-class Horse extends Animal{
+class Horse extends An{
     void changeColor(){
         color ="dark brown";
     }
@@ -32,7 +33,7 @@ class Horse extends Animal{
 
 }
 
-class Chicken extends Animal{
+class Chicken extends An{
     void changeColor(){
         color ="yellow";
     }
