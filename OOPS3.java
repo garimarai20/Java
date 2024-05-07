@@ -1,8 +1,8 @@
 public class OOPS3 {
     public static void main(String[] args) {
-        Horse h = new Horse();
-        System.out.println(h.color);
-        h.eat();
+        Mustang myhorse = new Mustang();
+        
+        
         
     }
     
@@ -12,7 +12,7 @@ abstract class An{
     String color;
     
     An()  {
-        color = "brown";
+        System.out.println("Animal constructor called" );
         
     }
     void eat(){
@@ -24,6 +24,9 @@ abstract class An{
 }
 
 class Horse extends An{
+    Horse(){
+        System.out.println("horse constructor called");
+    }
     void changeColor(){
         color ="dark brown";
     }
@@ -40,4 +43,12 @@ class Chicken extends An{
     void walk(){
         System.out.println("walks on two legs");
     }
+} 
+
+class Mustang extends Horse{
+
+    public Mustang() { 
+        System.out.println("mustang constructor called");
+    }
+    
 }
