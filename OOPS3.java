@@ -1,13 +1,8 @@
 public class OOPS3 {
     public static void main(String[] args) {
         Horse h = new Horse();
-        h.eat();
-        h.walk();
         System.out.println(h.color);
-
-        Chicken c = new Chicken();
-        c.eat();
-        c.walk();
+        h.eat();
         
     }
     
@@ -15,8 +10,9 @@ public class OOPS3 {
 
 abstract class Animal{
     String color;
-    Animal(){
-        color = "brown";
+    
+    Animal()  {
+        
     }
     void eat(){
         System.out.println("hi"); 

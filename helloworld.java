@@ -1,6 +1,3 @@
-import java.util.*;
-
-import javax.annotation.processing.SupportedSourceVersion;
 
 
 public class helloworld {
@@ -93,7 +90,7 @@ for (int i = 1; i<=totRows; i++){
 }
 
 public static void main(String args[]){
-       hollow_rectangle(3,4);
+       printHelloWorld();
     
         }}
 // Boiler plate code 

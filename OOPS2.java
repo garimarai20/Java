@@ -2,8 +2,8 @@ public class OOPS2 {
     public static void main(String[] args) {
         Deer d = new Deer();
         Animal a = new Animal();
-        
-        a.eat();
+        d.disposes();
+        a.disposes();
 
     //     Calculator calc =new Calculator();
     //    System.out.println( calc.sum(1, 2));
@@ -28,6 +28,10 @@ class Calculator{
 class Animal{
     void eat(){
         System.out.println("eats yellow");
+    } 
+
+    void disposes(){
+        System.out.println("disposes what it eats");
     }
 }
 
