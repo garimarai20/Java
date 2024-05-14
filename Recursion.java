@@ -16,12 +16,17 @@ public class Recursion {
         System.out.print(" "+n+ " ");
     }
 
-    public static void factorial(int n ){
-        
+    public static int factorial(int n ){
+        if(n==0){
+            return 1;
+        } 
+       int  f= n*factorial(n-1);
+        return f;
+
     }
 
     public static void main(String[] args) {
         int n = 5;
-        printAsc(n);
+        System.out.println(factorial(n));
     }
 }
