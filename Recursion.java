@@ -24,9 +24,17 @@ public class Recursion {
         return f;
 
     }
+    public static int Sum(int n){
+        if(n==0){
+            return n;
+        }
+        int sum=0;
+        sum=n + Sum(n-1);
+        return sum;
+    }
 
     public static void main(String[] args) {
-        int n = 0;
-        System.out.println(factorial(n));
+        int n = 5;
+        System.out.println(Sum(n));
     }
 }
