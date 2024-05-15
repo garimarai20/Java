@@ -32,9 +32,17 @@ public class Recursion {
         sum=n + Sum(n-1);
         return sum;
     }
+    public static int Fibonacci(int n){
+        int f =0;
+        if(n==0){
+            return 0;
+        }
+        f= Fibonacci(n-1)+Fibonacci(n-2);
+        return f;
+    }
 
     public static void main(String[] args) {
         int n = 2;
-        System.out.println(Sum(n));
+        System.out.println(Fibonacci(n));
     }
 }
