@@ -62,17 +62,27 @@ public class Recursion {
     }
 
     public static int LastOccur(int n[],int key, int i){
-        if(i<0){ return -1;}
-        if(n[i]== key){
+        // if(i<0){ return -1;}
+        // if(n[i]== key){
+        //     return i;
+        // }
+        // return LastOccur(n, key, i-1);
+
+        if(i ==  n.length){
+            return -1;
+        }
+        int f = LastOccur(n, key, i+1);
+        if( f == -1 && n[i] == key){
             return i;
         }
-        return LastOccur(n, key, i-1);
+        return f;
+
     }
 
     public static void main(String[] args) {
         int[] n = {1,2,3,4,5,1,3};
-        int i =n.length-1;
-        int key = 1;
+        int i =0;
+        int key = 3;
         System.out.println(LastOccur(n, key, i));
     
     }
