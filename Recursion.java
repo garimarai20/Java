@@ -51,10 +51,22 @@ public class Recursion {
        
     }
 
+    public static int firstOccur(int[] n, int key, int i ){
+        if(i == n.length){
+            return -1;
+        }
+        if(n[i] == key){
+            return i;
+        }
+        return firstOccur(n, key, i+1);
+
+    }
+
     public static void main(String[] args) {
-        int[] n = {1,2,3,4,5};
+        int[] n = {1,2,3,4,5,1,3};
         int i =0;
-        System.out.println(isSorted(n, i));
+        int key = 1;
+        System.out.println(firstOccur(n, key, i));
     
     }
 }
