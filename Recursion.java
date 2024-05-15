@@ -34,8 +34,8 @@ public class Recursion {
     }
     public static int Fibonacci(int n){
         int f =0;
-        if(n==0){
-            return 0;
+        if(n==0 || n==1){
+            return n;
         }
         f= Fibonacci(n-1)+Fibonacci(n-2);
         return f;
