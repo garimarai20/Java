@@ -79,11 +79,24 @@ public class Recursion {
 
     }
 
+    public static int Pow(int n , int x){
+        if(n == 0){
+            return 1;
+        }
+        int f = x * Pow(n-1, x);
+        return f;
+    }
+
     public static void main(String[] args) {
-        int[] n = {1,2,3,4,5,1,3};
-        int i =0;
-        int key = 3;
-        System.out.println(LastOccur(n, key, i));
+
+        int x= 2;
+        int n =3;
+        System.out.println(Pow(n, x));
+
+        // int[] n = {1,2,3,4,5,1,3};
+        // int i =0;
+        // int key = 3;
+        // System.out.println(LastOccur(n, key, i));
     
     }
 }
