@@ -90,7 +90,7 @@ public class Recursion {
     public static void main(String[] args) {
 
         int x= 2;
-        int n =3;
+        int n =5;
         System.out.println(Pow(n, x));
 
         // int[] n = {1,2,3,4,5,1,3};
