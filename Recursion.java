@@ -87,11 +87,26 @@ public class Recursion {
         return f;
     }
 
+    public static int OpPow(int a, int n ){
+        if(n == 0){
+            return 1;
+        }
+        int halfPow = OpPow(a, n/2)* OpPow(a, n/2);
+        if(n%2 != 0){
+            halfPow = a * halfPow;
+        }
+        return halfPow;
+    }
+
     public static void main(String[] args) {
 
-        int x= 2;
-        int n =5;
-        System.out.println(Pow(n, x));
+        int a = 2;
+        int n =10;
+        System.out.println(OpPow(a, n));
+
+        // int x= 2;
+        // int n =0;
+        // System.out.println(Pow(n, x));
 
         // int[] n = {1,2,3,4,5,1,3};
         // int i =0;
