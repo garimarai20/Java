@@ -88,10 +88,12 @@ public class Recursion {
     }
 
     public static int OpPow(int a, int n ){
+        
         if(n == 0){
             return 1;
         }
-        int halfPow = OpPow(a, n/2)* OpPow(a, n/2);
+        int z= OpPow(a, n/2);
+        int halfPow = z* z;
         if(n%2 != 0){
             halfPow = a * halfPow;
         }
