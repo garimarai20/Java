@@ -135,11 +135,12 @@ public class Recursion {
         if(n==1 || n==2){
             return n;
         }
+        return FriendsPairing(n-1)+ (n-1)* FriendsPairing(n-2);
 
-        int single = FriendsPairing(n-1);
-        int pairs =  (n-1)* FriendsPairing(n-2);
-        int totalways = single + pairs;
-        return totalways;
+        // int single = FriendsPairing(n-1);
+        // int pairs =  (n-1)* FriendsPairing(n-2);
+        // int totalways = single + pairs;
+        // return totalways;
     }
 
     public static void main(String[] args) {
