@@ -131,12 +131,21 @@ public class Recursion {
        }
 
     }
-    
+    public static int FriendsPairing(int n){
+        if(n==1 || n==2){
+            return n;
+        }
+
+        int single = FriendsPairing(n-1);
+        int pairs =  (n-1)* FriendsPairing(n-2);
+        int totalways = single + pairs;
+        return totalways;
+    }
 
     public static void main(String[] args) {
 
-        String str = "appnnaacollege";
-        RemoveDuplicate(str, 0, new StringBuilder(""), new boolean[26]);
+        // String str = "appnnaacollege";
+        // RemoveDuplicate(str, 0, new StringBuilder(""), new boolean[26]);
 
 
 
