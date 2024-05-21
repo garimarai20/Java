@@ -142,6 +142,9 @@ public class Recursion {
         // int totalways = single + pairs;
         // return totalways;
     }
+    public static void BinaryStrings(int n){
+        
+    }
 
     public static void main(String[] args) {
 
