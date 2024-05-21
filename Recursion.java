@@ -163,8 +163,10 @@ public class Recursion {
     }
 
     public static void main(String[] args) {
+        BinaryStrings(3,0,new StringBuilder(""));
+        
 
-        System.out.println(FriendsPairing(3));
+        // System.out.println(FriendsPairing(3));
         // String str = "appnnaacollege";
         // RemoveDuplicate(str, 0, new StringBuilder(""), new boolean[26]);
 
