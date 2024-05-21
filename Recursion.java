@@ -142,7 +142,7 @@ public class Recursion {
         // int totalways = single + pairs;
         // return totalways;
     }
-    public static void BinaryStrings(int n, int LastPlace, StringBuilder str){
+    public static void BinaryStrings(int n, int LastPlace,String str){
         if(n == 0){
             System.out.println(str);
             return;
@@ -154,17 +154,17 @@ public class Recursion {
         // } else{
         //     BinaryStrings(n-1,0, str.append("0"));
         // }
-        BinaryStrings(n-1,0, str.append("0"));
+        BinaryStrings(n-1,0, str+"0");
         if(LastPlace == 0){
-            BinaryStrings(n-1,1,str.append("1"));
+            BinaryStrings(n-1,1,str+"1");
         }
 
 
     }
 
     public static void main(String[] args) {
-        BinaryStrings(3,0,new StringBuilder(""));
-        
+        BinaryStrings(3,0,"");
+
 
         // System.out.println(FriendsPairing(3));
         // String str = "appnnaacollege";
