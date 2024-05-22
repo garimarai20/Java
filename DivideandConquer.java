@@ -8,8 +8,17 @@ public static void PrintArr(int arr[]){
 
 public static void MergeSort(int arr[], int si,int ei){
     //base case
+    if(si==ei || si>ei){
+        return;
+    }
+    //Kaam
+    int mid = si + (ei - si )/2;
+    MergeSort(arr, si, mid);
+    MergeSort(arr, mid, ei);
+    merge(arr, si, mid, ei);
 
 }
+
 
 
 
