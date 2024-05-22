@@ -52,7 +52,7 @@ public static void merge(int arr[],int si,int mid,int ei){
 
 
     public static void main(String[] args) {
-        int arr[]= {6,3,9,5,2,8};
+        int arr[]= {6,3,9,5,2,8,-2};
         MergeSort(arr, 0, arr.length -1);
 
         PrintArr(arr);
