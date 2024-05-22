@@ -18,7 +18,13 @@ public static void MergeSort(int arr[], int si,int ei){
     merge(arr, si, mid, ei);
 
 }
+public static void merge(int arr[],int si,int mid,int ei){
+    int temp[] = new int [ei-si+1];
+    int i = si;// iterator for left part
+    int j = mid +1 ; // iterator for right part
+    int k = 0; // iterator for temp arr
 
+}
 
 
 
