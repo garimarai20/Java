@@ -89,6 +89,8 @@ public static int search(int arr[], int tar , int si, int ei){
 
         int arr[] = {4,5,6,7,0,1,2};
         int tar= 0;
+        int tarIdx = search(arr, tar, 0, arr.length);
+        System.out.println(tarIdx);
 
         // int arr[]= {6,3,9,8,2,5,};
         // quicksort(arr, 0, arr.length -1);
