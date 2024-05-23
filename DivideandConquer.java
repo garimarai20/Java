@@ -50,6 +50,12 @@ public static void merge(int arr[],int si,int mid,int ei){
 }
 public static void quicksort(int arr[], int si,int ei){
     //LastElement
+    int pIdx = partition(arr,si,ei);
+    quicksort(arr, si,)
+
+
+} 
+public static int partition(int arr[], int si,int ei){
 
 }
 
