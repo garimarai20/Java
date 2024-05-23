@@ -48,6 +48,10 @@ public static void merge(int arr[],int si,int mid,int ei){
 
      }
 }
+public static void quicksort(int arr[], int si,int ei){
+    //LastElement
+
+}
 
 
 
