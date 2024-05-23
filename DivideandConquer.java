@@ -79,13 +79,21 @@ public static int partition(int arr[], int si,int ei){
         return i;
 }
 
+public static int search(int arr[], int tar , int si, int ei){
+
+}
+
 
 
     public static void main(String[] args) {
-        int arr[]= {6,3,9,8,2,5,};
-        quicksort(arr, 0, arr.length -1);
 
-        PrintArr(arr);
+        int arr[] = {4,5,6,7,0,1,2};
+        int tar= 0;
+
+        // int arr[]= {6,3,9,8,2,5,};
+        // quicksort(arr, 0, arr.length -1);
+
+        // PrintArr(arr);
 
     }
 
