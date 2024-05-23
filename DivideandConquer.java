@@ -90,13 +90,22 @@ public static int search(int arr[], int tar , int si, int ei){
     if(arr[si]<= arr[mid]){
         //case a: left
         if(arr[si]<=tar&& tar<=arr[mid]){
-            return search(arr, tar, si, mid);
+            return search(arr, tar, si, mid-1);
+        }else{
+            //case b : right
+            return search(arr, tar, mid+1, ei);
         }
-
-
     } 
     // mid on L2
-    else {
+    else { 
+        //case c : right
+        if(arr[mid]<= tar && tar <= arr[ei]){
+            return search(arr, tar, mid+1, ei);
+        }
+        else{
+            //case d: left
+            return search(arr, tar, si, mid-1) ;
+        }
 
     }
 }
