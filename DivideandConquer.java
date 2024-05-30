@@ -117,7 +117,7 @@ public static int search(int arr[], int tar , int si, int ei){
 
     public static void main(String[] args) {
         int arr[]={
-            2,3,4,5,6,7,8
+            -2,-1,2,4,5,6,7,8
         };
 
         // int arr[] = {4,5,6,7,0,1,2};
