@@ -30,15 +30,17 @@ public class p{
             if((isPrime(i+1)) == true){
                 a[i]= po2;
                 po2 = po2*2;
+                
             }
            else if((isSquare(i+1))== true){
                 a[i] = po3;
                 po3 = po3 *3;
-            } else{
                 
+            } else{
+                a[i]=a[i-2]+a[i-1];
             } 
-
-        // }
+            
+         }
 
 
 
