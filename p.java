@@ -13,14 +13,14 @@ public class p{
     }
 
     public static void main(String[] args) {
-        int a[]= new int[6];
-        int po2 = 1 ;
-        int po3 = 1 ;
-        for(int i=0; i<a.length;i++){
-            if((isPrime(i+1)) == true){
+        // int a[]= new int[6];
+        // int po2 = 1 ;
+        // int po3 = 1 ;
+        // for(int i=0; i<a.length;i++){
+        //     if((isPrime(i+1)) == true){
                 
-            }
-        }
+        //     }
+        // }
 
 
 
