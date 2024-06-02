@@ -14,6 +14,8 @@ public class p1{
         for(int i=0 ; i<a;i++){
             System.out.print(n[i]+" " );
         }
-        
+        for(int i=0;i<a;i++){
+            
+        }
     }
 }
