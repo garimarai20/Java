@@ -1,3 +1,4 @@
+package Practice_ques;
 public class p{
 
     public static boolean isPrime(int n){
