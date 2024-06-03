@@ -3,7 +3,8 @@ public class BackTracking {
     public static void changeArr(int[] a, int i,int val){
 //base case 
         if(i==a.length){
-
+            printArr(a);
+            return;
         }
 
 
