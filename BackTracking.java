@@ -3,7 +3,7 @@ public class BackTracking {
     public static void changeArr(int[] a, int i,int val){
 //base case 
         if(i==a.length){
-            printArr(a);
+            printAr(a);
             return;
         }
 
@@ -16,7 +16,7 @@ public class BackTracking {
 
     }
 
-    public static void printArr(int[] a){
+    public static void printAr(int[] a){
         for(int i=0;i<a.length;i++){
             System.out.println(a[i]+" ");
         }
