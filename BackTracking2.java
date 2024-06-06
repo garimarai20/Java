@@ -6,10 +6,10 @@ public class BackTracking2{
         if(i==str.length()){
             if(ans.length() ==0){
                 System.out.println("null");
-            }
+            }else{
             System.out.println(ans);
             return;
-        }
+        }}
 
         //recursion 
         //Yes choice 
