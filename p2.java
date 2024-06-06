@@ -16,13 +16,31 @@ public class p2 {
     } 
 
     public static void reverseString(char[] s) {
+        int n=0;
+        int m=s.length-1;
         //base case
-        if()
+        if(s.length==0 || s.length ==1){
+            System.out.println(s[0]);
+        }
+        while(m >=0){
+        char temp = s[n];
+        s[n]=s[m];
+        s[m] = temp;
+        n++;
+        m --;
+        }
+        printArr(s);
+    }
+    public static void printArr(char[] s){
+        for(int i =0; i< s.length ; i++){
+            System.out.print(s[i]);
+        }
     }
     public static void main(String[] args) {
 
         char[] s = {'h','e','l','l','o'};
         reverseString(s);
+        
         // int x =121;
         // System.out.println(isPalindrome(x));
     }
