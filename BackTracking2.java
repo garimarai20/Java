@@ -5,7 +5,7 @@ public class BackTracking2{
         //base case
         if(i==str.length()){
             System.out.println(ans);
-            return
+            return;
         }
 
         //recursion 
@@ -18,6 +18,7 @@ public class BackTracking2{
     }
 
     public static void main(String[] args) {
-        
+        String str = "abc";
+        findSubsets(str, "", 0);
     }
 }
