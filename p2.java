@@ -15,7 +15,7 @@ public class p2 {
 
     } 
 
-    public static void reverseString(char[] s) {
+    public static void reverseSring(char[] s) {
         int n=0;
         int m=s.length-1;
         //base case
@@ -39,7 +39,7 @@ public class p2 {
     public static void main(String[] args) {
 
         char[] s = {'h','e','l','l','o'};
-        reverseString(s);
+        reverseSring(s);
         
         // int x =121;
         // System.out.println(isPalindrome(x));
