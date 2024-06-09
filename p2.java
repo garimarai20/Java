@@ -8,7 +8,7 @@ public class p2 {
         s = (s*10)+r;
     n=n/10; }
         if(s == x){
-            return true;
+            return (true);
         }else{
             return false;
         }
