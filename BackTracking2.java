@@ -2,6 +2,12 @@
 
 public class BackTracking2{
 
+    public static void findPermutation(String str, String ans){
+      //base case  
+       
+        for(int i =0,)
+    }
+
     public static void main(String[] args) {
         String str ="abc";
     }
