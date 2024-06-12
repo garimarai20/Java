@@ -2,7 +2,9 @@
 
 public class BackTracking2{
 
-    
+    public static void main(String[] args) {
+        String str ="abc";
+    }
 }
 //     public static void findSubsets(String str, String ans, int i){
 //         //base case
