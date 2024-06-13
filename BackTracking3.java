@@ -1,7 +1,11 @@
 public class BackTracking3 {
 
     public static boolean isSafe(char board[][], int row, int col){
-        
+        // vertical up
+
+        //left up
+
+        //right up
     }
 
     public static void nQueens(char board[][], int row){
