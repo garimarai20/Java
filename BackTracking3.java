@@ -1,11 +1,17 @@
 public class BackTracking3 {
 
     public static void nQueens(char board[][], int row){
+        //base 
+        if(row == board.length){
+            printBoard(board);
+            return;
+        }
 
+        //column loop
         for(int j=0;j<board.length; j++){
             board[row][j] = 'Q';
-            nQueens(board, row+1);
-            board[row][j]='.';
+            nQueens(board, row+1);//function call
+            board[row][j]='.';//  backtracking step
         }
     }
     public static void main(String[] args) {
