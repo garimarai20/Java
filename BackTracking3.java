@@ -3,8 +3,8 @@ public class BackTracking3 {
         int n = 3;
         char board[][] = new char [n][n];
         // initialize
-        for(int i =0 ; i <n ; i++){
-            
+        for(int i=0; i<n; i++){
+
         }
 
 
