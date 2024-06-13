@@ -1,5 +1,9 @@
 public class BackTracking3 {
 
+    public static boolean isSafe(char board[][], int row, int col){
+        
+    }
+
     public static void nQueens(char board[][], int row){
         //base 
         if(row == board.length){
