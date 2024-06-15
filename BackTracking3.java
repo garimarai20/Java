@@ -59,6 +59,7 @@ public class BackTracking3 {
             }
         }
         nQueens(board, 0 );
+        System.out.println("total ways");
 
     }
 }
