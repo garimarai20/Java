@@ -23,21 +23,25 @@ public class BackTracking3 {
         return true;
     }
 
-    public static void nQueens(char board[][], int row){
+    public static boolean nQueens(char board[][], int row){
         //base 
         if(row == board.length){
             // printBoard(board);
             count++;
-            return;
+            return true;
         }
 
         //column loop
         for(int j=0;j<board.length; j++){
             if(isSafe(board, row, j)){
             board[row][j] = 'Q';
-            nQueens(board, row+1);//function call
+           if( nQueens(board, row+1)){
+            return true;
+           }
+           //function call
             board[row][j]='.';//  backtracking step
         }}
+        return false;
     }
     static int count=0;
 
