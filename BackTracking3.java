@@ -38,6 +38,7 @@ public class BackTracking3 {
             board[row][j]='.';//  backtracking step
         }}
     }
+    static int count=0;
 
     public static void printBoard(char board[][]){
         System.out.println("--------------chess board--------------");
