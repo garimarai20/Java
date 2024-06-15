@@ -26,7 +26,7 @@ public class BackTracking3 {
     public static void nQueens(char board[][], int row){
         //base 
         if(row == board.length){
-            printBoard(board);
+            // printBoard(board);
             return;
         }
 
