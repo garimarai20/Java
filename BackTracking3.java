@@ -59,7 +59,7 @@ public class BackTracking3 {
             }
         }
         nQueens(board, 0 );
-        System.out.println("total ways to solve ");
+        System.out.println("total ways to solve n queens");
 
     }
 }
