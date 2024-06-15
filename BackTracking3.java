@@ -27,6 +27,7 @@ public class BackTracking3 {
         //base 
         if(row == board.length){
             // printBoard(board);
+            count++;
             return;
         }
 
