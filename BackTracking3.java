@@ -62,8 +62,13 @@ public class BackTracking3 {
                 board[i][j] = '.';
             }
         }
-        nQueens(board, 0 );
-        System.out.println("total ways to solve n queens ="+ count);
+       if(nQueens(board, 0 )){
+        System.out.println("solution is possible ");
+        printBoard(board);
+       } else{
+        System.out.println("solution is not possible ");
+       }
+       // System.out.println("total ways to solve n queens ="+ count);
 
     }
 }
