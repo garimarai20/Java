@@ -182,7 +182,7 @@ public class Recursion {
         // int n =0;
         // System.out.println(Pow(n, x));
 
-        // int[] n = {1,2,3,4,5,1,3};
+        // int[] n = {1,2,3,4,5,1
         // int i =0;
         // int key = 3;
         // System.out.println(LastOccur(n, key, i));
