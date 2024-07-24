@@ -1,5 +1,5 @@
 public class sorting {
-    public void printarr(int[] arr){
+    public static void printarr(int[] arr){
         int n= arr.length;
         for(int i=0; i<n; i++){
             System.out.print(arr[i]+" ");
@@ -9,24 +9,23 @@ public class sorting {
     public static int selectionSort(int[] arr){
         int n= arr.length;
         
-        for(int i=0; i<n-1;i++){
+        for(int i=0; i<=n-1;i++){
             int min=i;
-            for (int j=0; j<n; j++){
+            for (int j=0; j<=n-1; j++){
                 if(arr[j]< arr[min]){
                     int temp = arr[min];
                     arr[min]=arr[j];
                     arr[j]=temp;
-
-                    return arr[min];
                 }
-                
+                return arr[min];
             }
         } return 0;
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,5,6,7};
-        System.out.print(selectionSort(arr)+" ");
+        int[] arr = {1,2,5,8,7};
+        selectionSort(arr);
+        printarr(arr);
 
     }
     
